@@ -1,8 +1,44 @@
-body{
-    background-color: rgb(14, 11, 22);
+@font-face {
+    font-family: 'Orbitron_Medium';
+    src: url('./fonts/orbitron/orbitron_medium.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/orbitron/orbitron_medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/orbitron/orbitron_medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/orbitron/orbitron_medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/orbitron/orbitron_medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         /* url('./fonts/Simplifica.svg#svgFontName') format('svg'); Legacy iOS */
 }
 
-section, article, aside, footer{
+@font-face {
+    font-family: 'Orbitron_Bold';
+    src: url('./fonts/orbitron/orbitron_bold.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/orbitron/orbitron_bold.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/orbitron/orbitron_bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/orbitron/orbitron_bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/orbitron/orbitron_bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         /* url('./fonts/Simplifica.svg#svgFontName') format('svg'); Legacy iOS */
+}
+
+body{
+    background-color: rgb(14, 11, 22);
+    width: 90%;
+    display: grid;
+    
+    grid-template-rows: [navbar] 1fr [main] 8fr [footer] 1fr;
+}
+
+section, article, aside, main{
     background-color: white;
+    color: rgb(14, 11, 22);
+}
+
+main{
+    grid-row: main;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.about-text{
+    font-family: 'Orbitron_Medium';
+    font-size: 18px;
 }
 
