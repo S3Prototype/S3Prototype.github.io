@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(14, 11, 22);
+}
+
+section, article, aside, footer{
+    background-color: white;
+}
+
