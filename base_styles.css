@@ -23,7 +23,7 @@ body{
     width: 90%;
     display: grid;
     
-    grid-template-rows: [navbar] 1fr [main] 8fr [footer] 1fr;
+    grid-template-columns: [navbar] 1fr [main] 8fr [footer] 1fr;
 }
 
 section, article, aside, main{
@@ -32,7 +32,7 @@ section, article, aside, main{
 }
 
 main{
-    grid-row: main;
+    grid-columns: main;
     min-width: 100%;
     min-height: 100%;
 }
