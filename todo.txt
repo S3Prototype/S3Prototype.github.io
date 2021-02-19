@@ -1,0 +1,4 @@
+* Fix the email image.
+* Link the contact images.
+* Put border around image. Animated gradient perhaps?
+* Make navigation at bottom. Plenty of space.
