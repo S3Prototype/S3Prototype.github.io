@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="base_styles.css">
     <link rel="stylesheet" href="about_styles.css">
     <link rel="stylesheet" href="skills_styles.css">
+    <link rel="stylesheet" href="portfolio_styles.css">
     <link rel="stylesheet" href="nav_styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -45,7 +46,9 @@
             <!-- <div class="headshot-container" id="headshot-container"> -->
                 <img src="shaquilhansford.jpg" alt="" class='headshot'>
             <!-- </div> -->
-            <h1 class='about-title'>About Shaquil Hansford</h1>
+            <div class="about-title">
+                <h1>About Shaquil Hansford</h1>
+            </div>
             <p class="about-text">
                 Nice to meet you! I'm a fullstack web developer seeking full-time employment or contract work. My most prominent project is <a href='https://buddyviewer.com' target="none">Buddy Viewer</a>, a consumer-facing web app for synchronously watching videos from (almost) any site together with friends! Wanna hire me? Send an email, text, call, or tweet my way any time between 7AM and 11PM EST!                   
             </p>
@@ -68,6 +71,64 @@
             </div>
         </section>        
         <section class="portfolio" id="portfolio">
+            <div class="buddyviewer-info" id="buddyviewer-info">
+                <h1>Portfolio Projects</h1>
+                <details open>
+                <summary><span class="project-title">Buddy Viewer</span></summary>
+                    <img src="./buddyviewer.gif" alt="">
+                    <ul class="project-links">
+                        <a href="https://github.com/S3Prototype/BuddyViewer/" target="none">
+                            <li>Source code on github: https://github.com/S3Prototype/BuddyViewer/</li>                    
+                        </a>
+                        <a href="https://buddyviewer.com" target="none">
+                            <li>Live Project Link: https://buddyviewer.com</li>
+                        </a>
+                    </ul>
+                    <p class="project-description">
+                        Buddy Viewer is a live full stack webapp for watching synchronized videos from (almost) any source.                
+                    </p>
+                    <p class="project-technical-details">
+                        <details open>
+                            <summary>
+                                Technical Details:
+                            </summary>
+                            <ul>
+                                <li> Front-End:
+                                    <ul>
+                                        <li>Vanilla JS and jQuery on the front end.</li>
+                                        <li>Uses custom API for sending and receiving video data to and from the server.</li>
+                                        <li>SocketIO for real-time communication</li>
+                                        <li>AJAX for search queries.</li>              
+                                    </ul>
+                                </li>
+                                <li> Back-End
+                                    <ul>
+                                        <li>
+                                            Custom API designed for sending and receiving video information to and from the client.
+                                        </li>
+                                        <li>
+                                            NodeJS for server runtime. Perfect for asynchronous inputs from users pressing play, pause and seek buttons on video players.
+                                        </li>
+                                        <li>
+                                            Express for routing and API queries.
+                                        </li>
+                                        <li>
+                                            MongoDB with mongoose for serializing data to a database.
+                                        </li>
+                                        <li>
+                                            Redis cache to memoize recent activity for faster response times.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>                        
+                        </details>
+
+                    </p>
+                </div>
+            </details>
+            <div class="buddyviewer-media" id="buddyviewer-media">
+
+            </div>
         </section>
         <section class='skills' id='skills'>
             <h1 class="skills-title">Skills</h1>
@@ -132,9 +193,10 @@
                     </details>
                 </li>
             </ul>
-            <h1>Work History</h1>
+            <h1 class="skills-title">Work History</h1>
             <ul>
                 <li>2017 - 2020 - Freelance Video Editing and Graphic Design</li>
+
                 <li>2012 - 2017 - Retail</li>
             </ul>
         </section>

@@ -50,6 +50,12 @@
     text-transform: uppercase;
 } */
 
+.about-title{
+    width: 100%;
+    /* background-color: white; */
+    text-align: center;
+}
+
 .about-text{
     font-family: 'Gidole', Arial, Helvetica, sans-serif;
     font-size: var(--base-text-size);

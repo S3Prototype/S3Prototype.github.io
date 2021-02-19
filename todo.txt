@@ -1,6 +1,8 @@
-* Make navigation at bottom. Plenty of space.
+* Add buddyviewer hd gif or mp4 to portfolio section.
+* Add blog, youtube and perjure book logos.
 * Change colors of contact logos to fit color pallette.
     ** Give drop shadows to them as well.
+* Figure out why the page is slightly too wide. Some container element must be blowing out of the max width.
 
 REFERENCE:
 https://www.sycamore.design/#services
@@ -8,8 +10,13 @@ https://www.sycamore.design/#services
 DONE:
 
 ===
-2/19/21
+2/20/21
 
+===
+2/19/21
+* Make navigation at bottom. Plenty of space.
+* Add portfolio section
+* Format skills/experience section
 * Put border around image. Animated gradient perhaps?
     ** Didn't like it.
 

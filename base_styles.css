@@ -31,7 +31,12 @@
 
 :root{
     --base-text-size: 20px;
-    --title-text-size: 20px;
+    --title-text-size: 22px;
+    
+    --skills-title-size: 40px;
+    --skills-text-size: 24px;
+
+    --portfolio-text-size: 24px;
     
     --orange: hsl(9deg, 62%, 54%);
     --magenta: hsl(283deg, 70%, 46%);
@@ -41,9 +46,18 @@
     --black: hsl(256deg, 50%, 3%);    
 }
 
+h2{
+    margin-bottom: 5px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
 a{
     color: whitesmoke;
     font-family: inherit;
+    word-wrap: break-word;
 }
 
 body{
@@ -51,6 +65,7 @@ body{
     font-family: 'Gidole', Arial, Helvetica, sans-serif;
     font-size: var(--base-text-size);
     color: whitesmoke;
+    width: 100vw;
     /* width: 90%; */
     /* margin: auto; */
     
@@ -76,6 +91,12 @@ main{
 section{
     min-height: 100vh;
     min-width: 100%;
+}
+
+details{
+    width: 100%;
+    max-width: 100vw;
+    word-wrap: break-word;
 }
 
 /* .about-text{

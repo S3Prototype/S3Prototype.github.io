@@ -1,7 +1,8 @@
 .floating-nav{
     position:fixed;
     left: 0;
-    top: 85vh;
+    right: 0;
+    top: 86vh;
     min-width: 100vw;
     display: flex;
     justify-content: center;
