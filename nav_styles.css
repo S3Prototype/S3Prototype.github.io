@@ -1,0 +1,35 @@
+.floating-nav{
+    position:fixed;
+    left: 0;
+    top: 85vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.floating-nav a{
+    text-decoration: none;
+}
+
+.nav-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(9deg, 62%, 54%, 0.9);
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: whitesmoke;     */
+    color: whitesmoke;
+    /* color: var(--black); */
+    min-width: 90%;
+    min-height: 10vh;
+    border-radius: 20px;
+
+    box-shadow:2px 2px 10px black;
+
+}
+
+/* .nav-options span{
+    box-shadow:2px 2px 10px black;
+} */

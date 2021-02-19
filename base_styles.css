@@ -32,6 +32,13 @@
 :root{
     --base-text-size: 20px;
     --title-text-size: 20px;
+    
+    --orange: hsl(9deg, 62%, 54%);
+    --magenta: hsl(283deg, 70%, 46%);
+    --red: hsl(329deg, 100%, 30%);
+    --hot-pink: hsl(328deg, 92%, 41%);
+    --salmon: hsl(346deg, 63%, 50%);
+    --black: hsl(256deg, 50%, 3%);    
 }
 
 a{
@@ -43,6 +50,7 @@ body{
     background-color: rgb(14, 11, 22);
     font-family: 'Gidole', Arial, Helvetica, sans-serif;
     font-size: var(--base-text-size);
+    color: whitesmoke;
     /* width: 90%; */
     /* margin: auto; */
     
@@ -75,3 +83,23 @@ section{
     font-size: 18px;
 } */
 
+h1{
+    font-family: 'Orbitron_Bold', Arial, Helvetica, sans-serif;
+    font-size: var(--title-text-size);
+    text-transform: uppercase;
+}
+
+@media (max-width: 376px){
+    :root{
+        --base-text-size: 18px;
+        --title-text-size: 20px;
+    }   
+}
+
+
+@media (max-width: 359px){
+    :root{
+        --base-text-size: 14px;
+        --title-text-size: 20px;
+    }   
+}

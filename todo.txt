@@ -1,4 +1,21 @@
+* Make navigation at bottom. Plenty of space.
+* Change colors of contact logos to fit color pallette.
+    ** Give drop shadows to them as well.
+
+REFERENCE:
+https://www.sycamore.design/#services
+
+DONE:
+
+===
+2/19/21
+
+* Put border around image. Animated gradient perhaps?
+    ** Didn't like it.
+
+
+===
+2/18/21
+
 * Fix the email image.
 * Link the contact images.
-* Put border around image. Animated gradient perhaps?
-* Make navigation at bottom. Plenty of space.
