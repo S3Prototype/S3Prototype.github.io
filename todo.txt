@@ -2,7 +2,6 @@
 * Add blog, youtube and perjure book logos.
 * Change colors of contact logos to fit color pallette.
     ** Give drop shadows to them as well.
-* Figure out why the page is slightly too wide. Some container element must be blowing out of the max width.
 
 REFERENCE:
 https://www.sycamore.design/#services
@@ -11,6 +10,9 @@ DONE:
 
 ===
 2/20/21
+
+* Figure out why the page is slightly too wide. Some container element must be blowing out of the max width.
+    ** HOLY SHIT THAT SUCKED.
 
 ===
 2/19/21

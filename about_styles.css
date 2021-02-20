@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 20px;
 }
 
 /* .headshot-container{
@@ -51,16 +52,19 @@
 } */
 
 .about-title{
+    /* margin-top: 30px; */
+    font-size: var(--about-title-size);
     width: 100%;
     /* background-color: white; */
     text-align: center;
 }
 
 .about-text{
+    /* margin-top: 30px; */
     font-family: 'Gidole', Arial, Helvetica, sans-serif;
     font-size: var(--base-text-size);
     /* text-align: center; */
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
@@ -69,7 +73,7 @@
     align-items: center;
     justify-content: space-evenly;
     min-width: 100%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .phone-number{
@@ -77,5 +81,8 @@
 }
 
 .phone-contact{
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    min-width: 100%;
+    text-align: center;
+    font-size: var(--contact-text-size);
 }

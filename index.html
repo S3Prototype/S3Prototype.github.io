@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About/Contact | Shaquil Hansford's WebDev Portfolio</title>
+    
     <link rel="stylesheet" href="base_styles.css">
     <link rel="stylesheet" href="about_styles.css">
     <link rel="stylesheet" href="skills_styles.css">
     <link rel="stylesheet" href="portfolio_styles.css">
     <link rel="stylesheet" href="nav_styles.css">
+    
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -46,15 +48,13 @@
             <!-- <div class="headshot-container" id="headshot-container"> -->
                 <img src="shaquilhansford.jpg" alt="" class='headshot'>
             <!-- </div> -->
-            <div class="about-title">
-                <h1>About Shaquil Hansford</h1>
-            </div>
+            <h1 class="about-title">About Shaquil Hansford</h1>
             <p class="about-text">
-                Nice to meet you! I'm a fullstack web developer seeking full-time employment or contract work. My most prominent project is <a href='https://buddyviewer.com' target="none">Buddy Viewer</a>, a consumer-facing web app for synchronously watching videos from (almost) any site together with friends! Wanna hire me? Send an email, text, call, or tweet my way any time between 7AM and 11PM EST!                   
+                Nice to meet you! I'm a fullstack web developer seeking full-time employment or contract work. My biggest project is <a href='https://buddyviewer.com' target="none">Buddy Viewer</a>, a live webapp for synchronously watching videos from (almost) any site together with friends! Wanna hire me? Send an email, text, call, or tweet any time between 7AM and 11PM EST!                   
             </p>
             <div id="phone-contact" class="phone-contact">
                 <span class="fas fa-phone"></span>
-                <a href="tel:973-914-7775" name="phone" id="phone-number" class="phone-number">
+                <a href="tel:973-914-7775" name="phone" id="phone-number" class="phone-number"></a>
                     973-914-7775</a>
                 <span class="email"> | liuqahs15@gmail.com</span>                
             </div>
@@ -71,11 +71,17 @@
             </div>
         </section>        
         <section class="portfolio" id="portfolio">
+            <h1 class="portfolio-title">Portfolio Projects</h1>
             <div class="buddyviewer-info" id="buddyviewer-info">
-                <h1>Portfolio Projects</h1>
                 <details open>
                 <summary><span class="project-title">Buddy Viewer</span></summary>
-                    <img src="./buddyviewer.gif" alt="">
+                    <div class="video-container">
+                        <video id='buddyviewer-demo-video' class='project-demo-video' muted autoplay loop>
+                            <source src="buddyviewer1.mp4" type="video/mp4">
+                            <source src="buddyviewer1.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
                     <ul class="project-links">
                         <a href="https://github.com/S3Prototype/BuddyViewer/" target="none">
                             <li>Source code on github: https://github.com/S3Prototype/BuddyViewer/</li>                    
@@ -88,7 +94,7 @@
                         Buddy Viewer is a live full stack webapp for watching synchronized videos from (almost) any source.                
                     </p>
                     <p class="project-technical-details">
-                        <details open>
+                        <details>
                             <summary>
                                 Technical Details:
                             </summary>
