@@ -35,21 +35,15 @@
 }
 
 .contact-logo{
-    min-width: 50px;
-    min-height: 50px;
-    max-width: 50px;
-    max-height: 50px;
+    min-width: 45px;
+    min-height: 45px;
+    max-width: 45px;
+    max-height: 45px;
 }
 
 .github{
     color: white;
 }
-
-/* .about-title{
-    font-family: 'Orbitron_Bold', Arial, Helvetica, sans-serif;
-    font-size: var(--title-text-size);
-    text-transform: uppercase;
-} */
 
 .about-title{
     /* margin-top: 30px; */

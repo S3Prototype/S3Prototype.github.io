@@ -1,7 +1,6 @@
-* Add buddyviewer hd gif or mp4 to portfolio section.
-* Add blog, youtube and perjure book logos.
-* Change colors of contact logos to fit color pallette.
-    ** Give drop shadows to them as well.
+
+
+https://www.amazon.com/Perjure-Book-1-Welcome-Multiverse-ebook/dp/B01CF3MYLW
 
 REFERENCE:
 https://www.sycamore.design/#services
@@ -11,6 +10,10 @@ DONE:
 ===
 2/20/21
 
+* Change colors of contact logos to fit color pallette.
+    ** Give drop shadows to them as well.
+* Add blog, youtube and perjure book logos.
+* Add buddyviewer hd gif or mp4 to portfolio section.
 * Figure out why the page is slightly too wide. Some container element must be blowing out of the max width.
     ** HOLY SHIT THAT SUCKED.
 

@@ -4,8 +4,8 @@
     /* grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr; */
     /* height: 100%; */
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     
     /* font-size: var(--portfolio-text-size); */
 }
@@ -19,6 +19,7 @@
 .project-title{
     /* font-size: var(--title-text-size); */
     font-family: 'Orbitron_Medium';
+    margin-bottom: 20px;
 }
 
 .portfolio li{
@@ -31,13 +32,22 @@
 }
 
 .project-demo-video{
-    min-width: 100%;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;    
     max-width: 100%;
+    pointer-events: none;
 }
 
 .video-container{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80vw;
+    max-width: 80%;
+}
+
+.portfolio summary{
+    margin-left: 20px;
+    margin-top: 40px;
 }
