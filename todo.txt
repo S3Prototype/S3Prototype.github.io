@@ -1,4 +1,7 @@
-
+TODO:
+* Use cloudinary cdn for logos and videos
+* Improve technical details section
+* Implement backend with firebase
 
 https://www.amazon.com/Perjure-Book-1-Welcome-Multiverse-ebook/dp/B01CF3MYLW
 
@@ -6,6 +9,12 @@ REFERENCE:
 https://www.sycamore.design/#services
 
 DONE:
+
+===
+2/21/21
+
+* Add education section
+* Add a lessons learned section
 
 ===
 2/20/21
