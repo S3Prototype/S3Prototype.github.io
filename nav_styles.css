@@ -2,7 +2,7 @@
     position:fixed;
     left: 0;
     right: 0;
-    top: 85%;
+    bottom: 5vh;
     /* min-width: 90%; */
     width: 100%;
     display: flex;
