@@ -42,3 +42,7 @@
 .soft-skills-list{
     list-style: none;
 }
+
+.work-history-list{
+    min-width: 100%;
+}
