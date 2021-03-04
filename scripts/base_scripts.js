@@ -1,4 +1,3 @@
-console.log("HELLO?")
 
 // When one project is opened, close the others and all their child summaries
 document.querySelectorAll('summary.project-title').forEach(clickedSummary=>{
