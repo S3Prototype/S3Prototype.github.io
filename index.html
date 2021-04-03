@@ -1,447 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaquil Hansford's WebDev Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="base_styles.css">
-    <link rel="stylesheet" href="about_styles.css">
-    <link rel="stylesheet" href="skills_styles.css">
-    <link rel="stylesheet" href="portfolio_styles.css">
-    <link rel="stylesheet" href="nav_styles.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Hi! I'm a Full Stack Developer specializing in MongoDB, ExpressJS, React and Node. Want to hire me? Email, call or tweet me any time between 7AM and 11PM EST/EDT.">
+    <meta name="author" content="Shaquil Hansford">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Shaquil Hansford's Portfolio Site" /> <!-- website name -->
+	<meta property="og:site" content="http://shaquilhansford.com/" /> <!-- website link -->
+	<meta property="og:title" content="Shaquil Hansford's Portfolio Site"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Hi! I'm a Full Stack Developer specializing in MongoDB, ExpressJS, React and Node. Want to hire me? Email, call or tweet me any time between 7AM and 11PM EST/EDT." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://shaquilhansford.com/images/shaquilhansford.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://shaquilhansford.com" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Shaquil Hansford's Portfolio</title>
     
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <script src="https://kit.fontawesome.com/ab8bbc25ce.js" crossorigin="anonymous"></script>
-    <!-- <script src="./register_css.js"></script> -->
-    <script src="./scripts/base_scripts.js" defer></script>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
 </head>
-    <nav class="floating-nav" id="floating-nav">
-        <div class="nav-options" id="nav-options">
-            <a href="#about">
-                <div class="about-nav option" id="about-nav">
-                    <span class="fas fa-address-card"></span>
-                    <span>About</span>
-                </div>
-            </a>
-            <a href="#portfolio">
-                <div class="portfolio-nav option" id="portfolio-nav">
-                    <span class="fas fa-folder"></span>
-                    <span>Portfolio</span>
-                </div>
-            </a>
-            <a href="#skills">
-                <div class="skills-nav option" id="skills-nav">
-                    <span class="fas fa-pen"></span>
-                    <span>Skills/Experience</span>
-                </div>
-            </a>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-    </nav>
-    <body>
-        <main>      
-            <section class='about' id='about'>
-                <!-- <div class="headshot-container" id="headshot-container"> -->
-                    <img src="shaquilhansford.jpg" alt="" class='headshot'>
-                <!-- </div> -->
-                <h1 class="about-title">About Shaquil Hansford</h1>
-                <p class="about-text">
-                    Nice to meet you! I'm a fullstack web developer with a preference for frontend. I'm seeking full-time employment or contract work. I specialize in the MongoDB, ExpressJS, React and NodeJS stack. Wanna hire me? Send an email, text, call, or tweet any time between 7AM and 11PM EST! <a href="https://twitter.com/shaquilhansford" target="blank">@shaquilhansford</a>                   
-                </p>
-                <p><a href="./shaquilhansfordresume.pdf" target="blank">Resume</a> | <a href="./shaquilhansford_cv.pdf">Cover Letter</a></p>
-                <div id="phone-contact" class="phone-contact">
-                    <a href="linkedin.com/in/shaquil-hansford/" name="linkedin" id="linkedin" class="linkedin">
-                        Linkedin Account</a>
-                    <span class="email"> | liuqahs15@gmail.com</span>                
-                </div>
-                <div id="about-contacts" class="about-contacts">
-                    <a href="https://twitter.com/shaquilhansford" target='blank'>
-                        <img src="twitter.png" alt="" class='contact-logo'>           
-                    </a>
-                    <a href="https://github.com/S3Prototype" target="blank">
-                        <img src="github.png" alt="" class='contact-logo github'>                    
-                    </a>
-                    <a href="mailto:liuqahs15@gmail.com"
-                    target="blank">
-                        <img src="email.png" alt="" class='contact-logo'>               
-                    </a>
-                    <a href="https://hansfordsanswers.hashnode.dev/"
-                    target="blank">
-                        <img src="myblog.png" alt="" class='contact-logo'>               
-                    </a>
-                    <a href="https://www.youtube.com/benjaminaugustliterature"
-                    target="blank">
-                        <img src="youtube.png" alt="" class='contact-logo'>               
-                    </a>
-                    <a href="https://www.amazon.com/Perjure-Book-1-Welcome-Multiverse-ebook/dp/B01CF3MYLW"
-                    target="blank">
-                        <img src="perjure.png" alt="" class='contact-logo'>               
-                    </a>                
-                </div>
-            </section>
-        </main>        
-        <section class="portfolio" id="portfolio">
-            <h1 class="portfolio-title">Portfolio Projects</h1>
-            <div class="buddyviewer-info" id="buddyviewer-info">
-                <details class="project-details buddyviewer-details" open>
-                    <summary class="project-title buddyviewer-title"><span>Buddy Viewer</span></summary>
-                    <div class="video-container">
-                        <video id='buddyviewer-demo-video' class='project-demo-video' muted autoplay loop>
-                            <source src="buddyviewer1.mp4" type="video/mp4">
-                            <source src="buddyviewer1.ogg" type="video/ogg">
-                        Sorry! Your browser can't play this demo video.
-                        </video>
-                    </div>
-                    <ul class="project-links">
-                        <a href="https://github.com/S3Prototype/BuddyViewer/" target="blank">
-                            <li>Source code on github: https://github.com/S3Prototype/BuddyViewer/</li>                    
-                        </a>
-                        <a href="https://buddyviewer.com" target="none">
-                            <li>Live Project Link: https://buddyviewer.com</li>
-                        </a>
-                    </ul>
-                    <p class="project-description">
-                        Buddy Viewer is a live full stack webapp for watching synchronized videos from (almost) any source. Users create or join a room, and when any single user presses play, pauses, skips or starts a new video, the same event happens for all other users.                
-                    </p>
-                    <p class="project-technical-details">
-                        <details>
-                            <summary>
-                                Technical Details:
-                            </summary>
-                            <ul>
-                                <li> Front-End:
-                                    <ul>
-                                        <li>Vanilla JS and jQuery on the front end.</li>
-                                        <li>Uses custom API for sending and receiving video data to and from the server.</li>
-                                        <li>SocketIO for real-time communication</li>
-                                        <li>AJAX for search queries.</li>              
-                                    </ul>
-                                </li>
-                                <li> Back-End
-                                    <ul>
-                                        <li>
-                                            Custom API designed for sending and receiving video information to and from the client.
-                                        </li>
-                                        <li>
-                                            NodeJS for server runtime. Perfect for asynchronous inputs from users pressing play, pause and seek buttons on video players.
-                                        </li>
-                                        <li>
-                                            Express for routing and API queries.
-                                        </li>
-                                        <li>
-                                            MongoDB with mongoose for serializing data to a database.
-                                        </li>
-                                        <li>
-                                            Redis cache to memoize recent activity for faster response times.
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>                        
-                        </details>
+    </div>
+    <!-- end of preloader -->
 
-                    </p>
-                    <p class="project-lessons-learned">
-                        <details>
-                            <summary>
-                                Lessons Learned:
-                            </summary>
-                            <ul class="detail-list">
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Value every member of the team.
-                                        </summary>   
-                                        Working on the backend server logic, database schemas, frontend JavaScript logic, and UX/UI design in CSS+HTML taught me just how challenging every part of a web app is, and just how important every member of a team is. 
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Always research available solutions before creating a plan.
-                                        </summary>
-                                        Because BuddyViewer requires back and forth communication between users in a room, I initially implemented a crude solution with AJAX. Luckily I eventually discovered web sockets and updated all of my code.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Value what is right over what is comfortable.
-                                        </summary>
-                                        Once I realized I had to replace my AJAX code with web sockets, I hesitated because I worried about losing all of my work. But I converted to web sockets anyway, because it's always better to use the right tool--not the easy tool.
-                                    </details>
-                                </li>
-                            </ul>                        
-                        </details>
-                    </p>
-                    <p class="project-skills-learned">
-                        <details>
-                            <summary>
-                                Skills Learned:
-                            </summary>
-                            <ul class="detail-list">
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Implementing features as part of daily tasks.
-                                        </summary>   
-                                        My daily to-do list of features to implement were highly similar to a workplace ticketing system. I chose items off the list at the start of coding sessions and set out to complete them before day's end.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Seeing longterm projects to completion.
-                                        </summary>   
-                                        After starting this projecting in November 2020, I completed this project February 8th, 2021, after 3 months.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Daily concentrated work.
-                                        </summary>   
-                                        While working on this project, I worked for 8 hours every weekday between 12pm and 8pm, except holidays. I added a new git commit almost every day.
-                                    </details>
-                                </li>
-                            </ul>
-                        </details>
-                    </p>
-                </details>
-            </div>
-            <div class="necronomisearch-info" id="necronomisearch-info">
-                <details class="project-details necronomisearch-details">
-                    <summary class="project-title necronomisearch-title"><span>NecronomiSearch</span></summary>
-                    <div class="video-container">
-                        <video id='necronomisearch-demo-video' class='project-demo-video' muted autoplay loop>
-                            <source src="necronomisearch.mp4" type="video/mp4">
-                            <source src="necronomisearch.ogg" type="video/ogg">
-                        Sorry! Your browser can't play this demo video.
-                        </video>
-                    </div>
-                    <ul class="project-links">
-                        <a href="https://github.com/S3Prototype/necronomisearch/" target="blank">
-                            <li>Source code on github: https://github.com/S3Prototype/necronomisearch</li>                    
-                        </a>
-                        <a href="https://www.necronomisearch.com//" target="none">
-                            <li>Live Project Link: https://www.necronomisearch.com/</li>
-                        </a>
-                    </ul>
-                    <p class="project-description">
-                        NecronomiSearch is a full stack web app that allows users to search for quotes and phrases in the back catalog of H.P. Lovecraft's most famous works.
-                    </p>
-                    <p class="project-technical-details">
-                        <details>
-                            <summary>
-                                Technical Details:
-                            </summary>
-                            <ul>
-                                <li> Front-End:
-                                    <ul>
-                                        <li>Built in React JS.</li>
-                                        <li>Uses custom API for sending and receiving video data to and from a GraphQL database on AWS.</li>
-                                        <li>Fuse JS for text parsing and searching.</li>
-                                        <li>Uses custom algorithm for breaking text search results into separate items.</li>            
-                                    </ul>
-                                </li>
-                                <li> Back-End:
-                                    <ul>
-                                        <li>API built with AWS Amplify</li>
-                                        <li>Database in AWS Amplify Datastore</li>
-                                    </ul>
-                                </li>
-                            </ul>                        
-                        </details>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Hi! I'm Shaquil Hansford, your next
+                                <br>
+                                <span id="js-rotating">
+                                    Full Stack Developer,
+                                    Front End Developer,
+                                    Back End Developer
+                                </span>
+                            </h1>
+                            <p class="p-heading p-large">I'm a Full Stack Developer specializing in the MongoDB, ExpressJS, React and NodeJS stack. Want to hire me? Email, call or tweet me any time between 7AM and 11PM EST/EDT.</p>
+                            <p class="p-heading p-large">
+                                <a class="btn-solid-lg" href="tel:9739147775">
+                                    Call Me: 973-914-7775
+                                </a>
+                                <a class="btn-solid-lg" href="mailto:liuqahs15@gmail.com">
+                                    Email Me: liuqahs15@gmail.com
+                                </a>
+                            </p>                          
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
+
+    <!-- Intro -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h1 class="section_name">Portfolio</h1>
+                        <br>
+                        <h2>OnePush</h2>
+                        <p>
+                            This Web App allows users to write blog posts, then publish them to multiple platforms at once.
+                        </p>
+                        <p>
+                            Live Url: <br>
+                            <a href="https://onepush.blog" target="_blank">https://onepush.blog</a>
+                        </p>
+                        <p>
+                            Github Repo: <a href="https://github.com/S3Prototype/onepush" target="_blank">https://github.com/S3Prototype/onepush</a>
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/onepush.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <p>
+                        <h2>Front-End:</h2>
+                        <ul>
+                            <li>Separate Frontend on Vercel</li>
+                            <li>NextJS</li>
+                            <li>React</li>
+                            <li><a href="https://npmjs.com/package/showdown" target="_bank">Showdown</a> for converting markdown into HTML</li>
+                        </ul>
                     </p>
-                    <p class="project-lessons-learned">
-                        <details>
-                            <summary>
-                                Lessons Learned:
-                            </summary>
-                            <ul class="detail-list">
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Automated tools are better than manual work.
-                                        </summary>   
-                                        Using AWS Amplify's API tool to auto-generate my API interfacing code increased my productivity 10x. In the future, I'll prefer professional productivity tools over manually constructing boilerplate things.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Read the docs first.
-                                        </summary>
-                                        Trying to study React through youtube videos was nowhere near as efficient or effective as reading the documentation on the website. In the future I will prioritize reading official documentation before going through tutorials.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            The Fundamentals Matter Most
-                                        </summary>
-                                        Because I was already solid on the fundamentals of HTML5 and CSS3 with this project, recreating the wireframe and building out a functional first draft of the UI was extremely quick, and allowed me to shift most of my focus to the application logic.
-                                    </details>
-                                </li>
-                            </ul>                        
-                        </details>
+                    <p>
+                        <h2>Back-End:</h2>
+                        <ul>
+                            <li>Separate Backend hosted on Render.com</li>
+                            <li>NodeJS</li>
+                            <li>Express for API routing</li>
+                            <li>CORS</li>
+                            <li>Ghost API</li>
+                            <li>DEV.to API</li>
+                            <li>Hashnode API</li>
+                            <li>Medium API</li>
+                        </ul>
                     </p>
-                    <p class="project-skills-learned">
-                        <details>
-                            <summary>
-                                Skills Learned:
-                            </summary>
-                            <ul class="detail-list">
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Building auto-generated API's through CLI commans.
-                                        </summary>   
-                                        I used the AWS Amplify CLI to generate my GraphQL API code, which allowed me to focus more on the logic of my app than the implementation details of database queries and mutations.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Deploying on AWS Amplify
-                                        </summary>   
-                                        Along with Render.com and Netlify, I'm now adept at deploying full stack projects to AWS amplify.
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>
-                                            Constructing a responsive UX with React.
-                                        </summary>   
-                                        Though I targeted Mobile as my main focal point, I used this project as a training ground for implementing React applications that scale the UI to the screen dimensions, altering the UX to more accessibly and stylishly fit each use case.
-                                    </details>
-                                </li>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+
+
+    <!-- Intro -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h2>BuddyViewer</h2>
+                        <p>
+                            This Web App allows users to simultaneously watch YouTube videos together in one room.
+                        </p>
+                        <p>
+                            Live Url: <br>
+                            <a href="https://buddyviewer.com" target="_blank">https://buddyviewer.com</a>
+                        </p>
+                        <p>
+                            Github Repo: <a href="https://github.com/S3Prototype/buddyviewer" target="_blank">https://github.com/S3Prototype/buddyviewer</a>
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <video loop autoplay muted>
+                        <source src="video/buddyviewer1.mp4" type="video/mp4">
+                        <source src="video/buddyviewer1.ogg" type="video/ogg">
+                    </video>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <p>
+                        <h2>Front-End:</h2>
+                        <ul>
+                            <li>Vanilla JS and jQuery on the front end.</li>
+                            <li>Uses custom API for sending and receiving video data to and from the server.</li>
+                            <li>SocketIO for real-time communication</li>
+                            <li>AJAX for search queries.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h2>Back-End:</h2>
+                        <ul>
+                            <li>Custom API designed for sending and receiving video information to and from the client.</li>
+                            <li>NodeJS for server runtime. Perfect for asynchronous inputs from users pressing play, pause and seek buttons on video players.</li>
+                            <li>Express for routing and API queries.</li>
+                            <li>MongoDB with mongoose for serializing data to a database.</li>
+                            <li>Redis cache to memoize recent activity for faster response times.</li>
+                        </ul>
+                    </p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+
+
+    <!-- Intro -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h2>NecronomiSearch</h2>
+                        <p>
+                            This Web App allows users to search through the catalog of HP Lovecraft.
+                        </p>
+                        <p>
+                            Live Url: <br>
+                            <a href="https://necronomisearch.com" target="_blank">https://necronomisearch.com</a>
+                        </p>
+                        <p>
+                            Github Repo: <a href="https://github.com/S3Prototype/necronomisearch" target="_blank">https://github.com/S3Prototype/necronomisearch</a>
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/necronomisearch.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <p>
+                        <h2>Front-End:</h2>
+                        <ul>
+                            <li>Built in React JS.</li>
+                            <li>Uses custom API for sending and receiving video data to and from a GraphQL database on AWS.
+                            </li>
+                            <li>Fuse JS for text parsing and searching.
+                            </li>
+                            <li>Uses custom algorithm for breaking text search results into separate items.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h2>Back-End:</h2>
+                        <ul>
+                            <li>API built with AWS Amplify
+                            </li>
+                            <li>Database in AWS Amplify Datastore</li>
+                        </ul>
+                    </p>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Get in contact with me!</h4>
+                        <p>
+                            <ul>
+                                <li><a href="tel:9739147775">
+                                    Call Me: 973-914-7775
+                                </a></li>
+                                <li><a href="mailto:liuqahs15@gmail.com">
+                                    Email Me: liuqahs15@gmail.com
+                                </a></li>
+                                <li><a href="https://twitter.com/shaquilhansford">
+                                    DM Me: @shaquilhansford
+                                </a></li>
                             </ul>
-                        </details>
-                    </p>
-                </details>
-            </div>
-        </section>
-        <section class='skills' id='skills'>
-            <h1 class="skills-title">Experience</h1>
-            <ul>
-                <li>
-                    1 year of experience with JavaScript, MongoDB, ExpressJS and NodeJS.
-                </li>
-                <li>10 years experience as a hobbyist coding personal projects in JavaScript, C++ and Lua.
-                </li>
-            </ul>
-            <h1 class="skills-title">Skills</h1>
-            <h2>Major Technologies</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>NodeJS</li>
-                <li>Mongo DB</li>
-                <li>jQuery</li>
-                <li>ExpressJS</li>
-                <li>CSS3</li>
-                <li>HTML5</li>
-            </ul>
-            <h2>Minor Technologies</h2>
-            <ul>
-                <li>Express Session</li>
-                <li>PassportJS</li>
-                <li>SocketIO</li>
-                <li>Redis</li>
-                <li>YouTube DL</li>
-            </ul>
-            <h2>Other Skills</h2>
-            <ul>
-                <li>Adobe Photoshop</li>
-                <li>Adobe After Effects</li>
-                <li>Adobe Premiere</li>
-            </ul>
-            <h2>Soft Skills</h2>
-            <ul class="detail-list">
-                <li>
-                    <details>
-                        <summary>Strong Communications Skills</summary>
-                        <ul>
-                            <li>My side YouTube channel has a growing community of fans who enjoy my videos, which are designed to explain complex literature in a simple way.</li>
-                            <li>I'm also a novelist, a hobby which requires dedication to clarity and directness of communication.</li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>Customer Service</summary>
-                        <ul>
-                            <li>My years of work in freelance video editing and graphic design required reaching out to customers in ways that appealed to them, and working with them on revisions to finished projects.</li>
-                            <li>My years working in retail also prepared me for keeping calm when customers are upset or confused.</li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>Collaboration</summary>
-                        <ul>
-                            <li>Through my freelance experience, I had to collaborate often with customers to figure out what their requirements were before implementing them.</li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>Meeting Deadlines</summary>
-                        <ul>
-                            <li>While working freelance, in order to be paid, I always had to intelligently set and then dilligently meet deadlines.</li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
-            <h1 class="skills-title">Education</h1>
-            <ul>
-                <li>Some University - Computer Science, 3 years</li>
-            </ul>
-            <h1 class="skills-title">Work History</h1>
-            <ul class="detail-list">
-                <li>
-                    <details>
-                        <summary>2017 - Present: Graphic Design Contractor</summary>
-                        <ul class="work-history-list">
-                            <li>Sought out customers through cold-calls, emails, and advertisements.</li>
-                            <li>Communicated back and forth with customers until their requirements were clear and the project could be started.</li>
-                            <li>Worked with customers to adjust each draft in the process to their desires.</li>
-                            <li>Produced web presences for clients, including social media images, album cover arts, and promotional posters.</li>
-                            <li>Used Adobe Photoshop, Adobe Premiere and Adobe After Effects </li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>2017 - Present: Contract Video Director</summary>
-                        <ul class="work-history-list">
-                            <li>Discovered and acquired customers through active cold-calls, emails and advertisements.</li>
-                            <li>Worked with customers to plan shooting schedules, video concepts and budgets.</li>
-                            <li>Negotiated permission to film at various locations.</li>
-                            <li>Directed and filmed all videos personally.</li>
-                            <li>Edited videos to customer-specified requirements.</li>
-                            <li>Worked in Adobe Premiere, Adobe After Effects, and Adobe Photoshop.</li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>2012 - 2017: Retail - Walgreens</summary>
-                        <ul class="work-history-list">
-                            <li>Guided customers through finding good discounts and deals to maximize their purchases.</li>
-                            <li>De-escalated situations with stressed customers and resolved their issues.</li>
-                            <li>Organized stock rooms and shelves for efficiency and cleanliness.</li>
-                            <li>Handled high volumes of customers during peak-traffic hours.</li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
-        </section>
-    </body>
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2021 <a href="https://twitter.com/shaquilhansford">Shaquil Hansford</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
