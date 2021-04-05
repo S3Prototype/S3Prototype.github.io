@@ -4,6 +4,10 @@
     margin-top: 10%; */
 }
 
+li{
+    max-width: 90%;
+}
+
 @media (max-width:900px){
     video{
         max-width:80%;
